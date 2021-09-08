@@ -1,0 +1,47 @@
+@import 'tachyons/variables';
+
+//nav
+nav > ul > li > a {
+  color: rgba(24,25,26,.5);
+}
+nav > ul > li > a.active {
+  color: $black;
+  font-weight: 600;
+}
+
+#sticky-nav {
+  visibility: visible;
+  top: 0;
+  right: 0;
+  transition: top 0.2s ease-in-out;
+}
+
+#sticky-nav.hide {
+  top: -100px;
+}
+
+#sticky-nav.stick {
+  position: sticky;
+  top: 0px;
+}
+
+#sticky-nav li {
+  padding-top: .533rem;
+  padding-bottom: .533rem;
+}
+
+#nav-logo {
+  width: 58px;
+  height: 58px;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out,;
+
+}
+
+#nav-logo.scrolled {
+  width: 28px;
+  height: 28px;
+}
+
+#nav-logo.scrolled + span {
+  display: none;
+}

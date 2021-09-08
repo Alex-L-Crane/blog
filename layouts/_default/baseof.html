@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html class="no-js" lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+
+{{ partial "head.html" . }}
+
+<body class="">
+	{{ partial "header.html" . }}
+
+	<main id="" role="main">
+		{{ block "main" . }}{{ end }}
+	</main>
+
+</body>
+
+</html>

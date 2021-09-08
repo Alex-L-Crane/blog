@@ -1,0 +1,7 @@
+{{ define "main" }}
+
+{{ range .Data.Pages.ByDate }}
+{{ .Render "post" }}
+{{ end }}
+
+{{ end }}

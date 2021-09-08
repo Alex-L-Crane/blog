@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+<header class="">
+	<div class="">
+		<h1 class=""><span class="">
+				{{ range first 2 (split .RelPermalink "/") }}
+				{{ if gt (len . ) 0 }}
+				{{  humanize (replace . "categories" "category") }}
+				{{ end }}
+				{{ end }}
+				:</span> <span class="">{{ .Title }}</span></h1>
+	</div>
+</header>
+
+{{ range .Data.Pages }}
+{{ .Render "post" }}
+{{ end }}
+
+{{ end }}

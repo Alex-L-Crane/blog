@@ -1,0 +1,4 @@
+baseURL: "https://alexcrane.design/"
+languageCode: "en-us"
+title: "Alex Crane Blog"
+theme: "ananke"
